@@ -13,7 +13,7 @@ import Navigation from './components/navigation'
 import Home      from './components/content/home.jsx'
 import About     from './components/content/about.jsx'
 import Blog      from './components/content/blog.jsx'
-import Content   from './components/content/content.jsx'
+import Contact   from './components/content/contact.jsx'
 import Customers from './components/content/customers.jsx'
 import Employees from './components/content/employees.jsx'
 import Help      from './components/content/help.jsx'
@@ -41,7 +41,7 @@ function App() {
                 <Switch> 
                   <Route path="/"           component={Home} exact /> 
                   <Route path="/about"      component={About} /> 
-                  <Route path="/contact"    component={Content} /> 
+                  <Route path="/contact"    component={Contact} /> 
                   <Route path="/product"    component={Product} /> 
                   <Route path="/order"      component={Order} /> 
                   <Route path="/users"      component={Users} /> 

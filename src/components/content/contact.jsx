@@ -3,7 +3,7 @@ import React from 'react';
 function Content() { 
     return ( 
         <h1> 
-            Content Page 
+            Contact Page 
         </h1> 
     ) 
 } 

@@ -104,47 +104,47 @@ function Navigation({navList}) {
                         <AtSignIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/about"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <MoonIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/contact"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <StarIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/product"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <AtSignIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/order"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <MoonIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/users"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <StarIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/customers"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <AtSignIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/employees"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <MoonIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/blog"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <StarIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
                     </NavLink>
-                    <NavLink to="/"> 
+                    <NavLink to="/help"> 
                     <ListItem p={2} mb={2} pl={5} className="listHoverEffect"> 
                         <AtSignIcon w={5} h={5} mr={4} /> 
                     </ListItem> 
