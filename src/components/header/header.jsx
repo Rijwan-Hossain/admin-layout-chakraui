@@ -7,7 +7,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 
 function Header({handleNavState}) { 
     return ( 
-        <Box style={{borderBottom: '2px solid #2D3748'}} h="60px"> 
+        <Box bg="#f8f8f8" h="60px" style={{borderBottom: '2px solid #2D3748'}}> 
             <Flex pl={5} pt={3}> 
                 <HamburgerIcon w={8} h={8} onClick={handleNavState} style={{cursor: 'pointer'}} /> 
 

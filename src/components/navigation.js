@@ -13,11 +13,12 @@ function Navigation({navList}) {
         { 
             navList 
             ? 
+            // Icon + text
             <Box w='15%' p={4} bg="#2D3748" color="#E2E8F0"> 
                 <Flex> 
                     <CalendarIcon w={8} h={8} mr={4} mt={2} ml={4} /> 
                     <Text pb={10} size="xl" className="logo"> 
-                        Site Logo 
+                        Logo 
                     </Text> 
                 </Flex> 
 
@@ -94,6 +95,7 @@ function Navigation({navList}) {
                 </List> 
             </Box> 
             :
+            // only ICON
             <Box w='5%' p={4} bg="#2D3748" color="#E2E8F0"> 
                 <Flex style={{paddingBottom: '45px'}}> 
                     <CalendarIcon w={8} h={8} mr={4} mt={2} ml={4} /> 
@@ -152,8 +154,8 @@ function Navigation({navList}) {
                 </List> 
             </Box> 
         } 
-        </>
-    )
-}
+        </> 
+    ) 
+} 
 
 export default Navigation;

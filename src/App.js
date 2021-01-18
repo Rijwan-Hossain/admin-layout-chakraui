@@ -1,16 +1,12 @@
 import React, {useState} from 'react'; 
-import Header from './components/header/header'
-import { 
-    Box, Flex, Spacer, Center, Text, Square, 
-    List, ListItem, ListIcon, UnorderedList, 
-    Heading
-} from "@chakra-ui/react"; 
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Header from './components/header/header'; 
+import { Box, Flex } from "@chakra-ui/react"; 
+import { BrowserRouter, Route, Switch } from 'react-router-dom'; 
 
-import Navigation from './components/navigation'
+import Navigation from './components/navigation'; 
 
 // Contents
-import Home      from './components/content/home.jsx'
+import Home      from './components/content/home/home.jsx'
 import About     from './components/content/about.jsx'
 import Blog      from './components/content/blog.jsx'
 import Contact   from './components/content/contact.jsx'
@@ -33,7 +29,7 @@ function App() {
           <Flex style={{height: '100vh'}}> 
               <Navigation navList={navList} /> 
 
-              <Box bg="#f8f8f8" w={navList ? '85%' : '100%'}> 
+              <Box bg="#edf2f9" w={navList ? '85%' : '100%'} style={{overflowY: 'scroll'}}> 
                 {/* Header */} 
                 <Header handleNavState={handleNavState} /> 
 
