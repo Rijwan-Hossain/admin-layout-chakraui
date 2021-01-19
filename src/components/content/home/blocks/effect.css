@@ -1,10 +1,13 @@
 
-.boxhover:hover {
-    height: 110px;
+.boxhover:hover { 
+    height: 110px; 
 } 
 
 
-
+.order_items:hover { 
+    background: rgb(230, 240, 235); 
+    cursor: pointer;
+} 
 
 
 
