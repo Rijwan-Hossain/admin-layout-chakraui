@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Navigation from './components/navigation'; 
 
+
 // Contents
 import Home      from './components/content/home/home.jsx'
 import About     from './components/content/about.jsx'
@@ -29,7 +30,15 @@ function App() {
           <Flex style={{height: '100vh'}}> 
               <Navigation navList={navList} /> 
 
-              <Box bg="#edf2f9" w={navList ? '85%' : '100%'} style={{overflowY: 'scroll'}}> 
+              <Box 
+                bg="#edf2f9" 
+                // w={navList ? '85%' : '100%'} 
+                w="100%"
+                style={{ 
+                  overflowY: 'scroll', 
+                  transition: 'all 0.4s' 
+                }}> 
+              
                 {/* Header */} 
                 <Header handleNavState={handleNavState} /> 
 

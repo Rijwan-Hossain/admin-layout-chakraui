@@ -5,12 +5,52 @@ import {
 } from "@chakra-ui/react"; 
 import { AtSignIcon, MoonIcon, StarIcon, CalendarIcon } from '@chakra-ui/icons'
 import { NavLink } from 'react-router-dom'
+import './nav.css'; 
 
 
 function Navigation({navList}) { 
+
     return ( 
         <> 
-        { 
+            <Box bg="#2D3748" color="#E2E8F0"> 
+                <List className={`navigation ${navList ? 'active' : ''}`}> 
+                    <ListItem> 
+                        <NavLink to="/"> 
+                            <span className="icon"> 
+                                <AtSignIcon w={5} h={5} /> 
+                            </span> 
+                            <span className="title"> 
+                                Sign 
+                            </span> 
+                        </NavLink> 
+                    </ListItem> 
+
+                    <ListItem> 
+                        <NavLink to="/about"> 
+                            <span className="icon"> 
+                                <MoonIcon w={5} h={5} /> 
+                            </span> 
+                            <span className="title"> 
+                                About 
+                            </span> 
+                        </NavLink> 
+                    </ListItem> 
+
+                    <ListItem> 
+                        <NavLink to="/contact"> 
+                            <span className="icon"> 
+                                <StarIcon w={5} h={5} /> 
+                            </span> 
+                            <span className="title"> 
+                                Contact 
+                            </span> 
+                        </NavLink> 
+                    </ListItem> 
+                </List> 
+            </Box> 
+
+
+        {/* { 
             navList 
             ? 
             // Icon + text
@@ -153,7 +193,7 @@ function Navigation({navList}) {
                     </NavLink>
                 </List> 
             </Box> 
-        } 
+        }  */} 
         </> 
     ) 
 } 

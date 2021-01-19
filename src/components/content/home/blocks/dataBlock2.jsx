@@ -34,4 +34,4 @@ function DataBlock2() {
     ) 
 } 
 
-export default DataBlock2;
+export default DataBlock2; 
