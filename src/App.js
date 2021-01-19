@@ -31,12 +31,12 @@ function App() {
           <Flex 
             style={{height: '100vh'}} 
             onClick={() => { 
-              window.innerWidth <= 600 && !navList && handleNavState()
+              window.innerWidth <= 600 && !navList && handleNavState() 
             }}> 
-            
+
               <Navigation navList={navList} handleNavState={handleNavState} /> 
 
-              <Box bg="#edf2f9" w="100%" style={{overflowY: 'scroll',transition: 'all 0.4s'}}> 
+              <Box bg="#edf2f9" w="100%" style={{overflowY: 'scroll', transition: 'all 0.4s'}}> 
               
                 {/* Header */} 
                 <Header handleNavState={handleNavState} /> 
