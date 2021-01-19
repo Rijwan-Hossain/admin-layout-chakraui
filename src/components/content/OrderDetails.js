@@ -4,14 +4,18 @@ import {Box, Flex, Text} from '@chakra-ui/react'
 function OrderDetails({location}) { 
     const {state: product} = location 
 
-    // address: 'Pragoti Sarani, Badda, Dhaka-Bangladesh', 
-    // time: new Date(), 
-
     return ( 
-        <Box m={20} style={{fontFamily: 'Poppins', fontWeight: 300}}> 
-            <Flex wrap="wrap"> 
+        <Box 
+            w={{base: '100%', md: '100%', lg: '100%'}} 
+            style={{fontFamily: 'Poppins', fontWeight: 300}}> 
+
+            <Flex wrap="wrap" m={{base: '0px', md:'20px', lg: '50px'}}> 
                 <img src={product.img} alt={product.slug} width="500px" /> 
-                <Box ml={5} p={10} boxShadow="base" bg="white"> 
+
+                <Box 
+                    p={10} ml={{base: '0px', md:'0px', lg: '20px'}} 
+                    mt={{base: '0px', md:'30px', lg: '0px'}} 
+                    boxShadow="base" bg="white"> 
                     <Text fontSize="22px" mb={3}> 
                         Name: {product.name} 
                     </Text> 

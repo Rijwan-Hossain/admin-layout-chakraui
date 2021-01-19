@@ -29,7 +29,7 @@ function App() {
     return ( 
       <BrowserRouter> 
           <Flex style={{height: '100vh'}}> 
-              <Navigation navList={navList} /> 
+              <Navigation navList={navList} handleNavState={handleNavState} /> 
 
               <Box bg="#edf2f9" w="100%" style={{overflowY: 'scroll',transition: 'all 0.4s'}}> 
               
@@ -39,15 +39,15 @@ function App() {
                 {/* Main content of every page */} 
                 <Switch> 
                   <Route path="/"               component={Home} exact /> 
-                  <Route path="/about"          component={About} /> 
-                  <Route path="/contact"        component={Contact} /> 
-                  <Route path="/product"        component={Product} /> 
+                  <Route path="/about"          component={About} exact /> 
+                  <Route path="/contact"        component={Contact} exact /> 
+                  <Route path="/product"        component={Product} exact /> 
                   <Route path="/order"          component={Order} exact/> 
-                  <Route path="/users"          component={Users} /> 
-                  <Route path="/customers"      component={Customers} /> 
-                  <Route path="/employees"      component={Employees} /> 
-                  <Route path="/blog"           component={Blog} /> 
-                  <Route path="/help"           component={Help} /> 
+                  <Route path="/users"          component={Users} exact /> 
+                  <Route path="/customers"      component={Customers} exact /> 
+                  <Route path="/employees"      component={Employees} exact /> 
+                  <Route path="/blog"           component={Blog} exact /> 
+                  <Route path="/help"           component={Help} exact /> 
                   <Route path="/order/:slug"    component={OrderDetails} /> 
                 </Switch> 
               </Box> 

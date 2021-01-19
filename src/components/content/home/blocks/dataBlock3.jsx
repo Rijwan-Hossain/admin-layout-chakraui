@@ -53,7 +53,7 @@ function DataBlock3() {
             templateColumns={{ base: "1fr", md:'auto', lg: "2fr 1fr" }} 
             spacing="30px" mb={10}> 
 
-            <Box h="400px" bg="#F7FAFC" p={3} boxShadow="base" rounded="md"> 
+            <Box h="400px" bg="#F7FAFC" p={3} boxShadow="base" rounded="md" style={{overflowY: 'scroll'}}> 
                 <Text as="h3" mb={5} style={{fontFamily: 'Poppins', fontSize: '24px', fontWeight: '300'}}>
                     Recent Orders 
                 </Text> 
@@ -86,10 +86,6 @@ function DataBlock3() {
                     } 
                 </List> 
             </Box> 
-
-
-
-
 
 
 

@@ -5,12 +5,17 @@ import { NavLink } from 'react-router-dom';
 import './nav.css'; 
 
 
-function Navigation({navList}) { 
+function Navigation({navList, handleNavState}) { 
+    const navbarOffInMobileViewHandler = () => {
+        if(window.innerWidth <= 600) {
+            handleNavState()
+        }
+    }
     return ( 
         <> 
             <List className={`navigation ${navList ? 'active' : ''}`} bg="#2D3748" color="#E2E8F0"> 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/"> 
+                    <NavLink to="/" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <AtSignIcon w={5} h={5} /> 
                         </span> 
@@ -21,7 +26,7 @@ function Navigation({navList}) {
                 </ListItem> 
 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/about"> 
+                    <NavLink to="/about" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <MoonIcon w={5} h={5} /> 
                         </span> 
@@ -32,7 +37,7 @@ function Navigation({navList}) {
                 </ListItem> 
 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/contact"> 
+                    <NavLink to="/contact" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <StarIcon w={5} h={5} /> 
                         </span> 
@@ -43,7 +48,7 @@ function Navigation({navList}) {
                 </ListItem> 
                 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/product"> 
+                    <NavLink to="/product" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <AtSignIcon w={5} h={5} /> 
                         </span> 
@@ -54,7 +59,7 @@ function Navigation({navList}) {
                 </ListItem> 
 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/order"> 
+                    <NavLink to="/order" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <MoonIcon w={5} h={5} /> 
                         </span> 
@@ -65,7 +70,7 @@ function Navigation({navList}) {
                 </ListItem> 
 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/users"> 
+                    <NavLink to="/users" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <StarIcon w={5} h={5} /> 
                         </span> 
@@ -76,7 +81,7 @@ function Navigation({navList}) {
                 </ListItem> 
 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/customers"> 
+                    <NavLink to="/customers" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <AtSignIcon w={5} h={5} /> 
                         </span> 
@@ -87,7 +92,7 @@ function Navigation({navList}) {
                 </ListItem> 
 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/employees"> 
+                    <NavLink to="/employees" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <MoonIcon w={5} h={5} /> 
                         </span> 
@@ -98,7 +103,7 @@ function Navigation({navList}) {
                 </ListItem> 
 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/blog"> 
+                    <NavLink to="/blog" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <StarIcon w={5} h={5} /> 
                         </span> 
@@ -109,7 +114,7 @@ function Navigation({navList}) {
                 </ListItem> 
 
                 <ListItem className="menuItem"> 
-                    <NavLink to="/help"> 
+                    <NavLink to="/help" onClick={navbarOffInMobileViewHandler}> 
                         <span className="icon" style={{marginTop: '-3px'}}> 
                             <AtSignIcon w={5} h={5} /> 
                         </span> 
