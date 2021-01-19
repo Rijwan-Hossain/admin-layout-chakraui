@@ -1,7 +1,7 @@
 
 
 .active { 
-    width: 300px !important; 
+    width: 250px !important; 
 } 
 
 
@@ -26,7 +26,11 @@
     position: relative;
     width: 100%;
     list-style: none;
-}
+} 
+
+.menuItem:hover { 
+    background: #4A5568; 
+} 
 
 
 .navigation a {
@@ -60,11 +64,23 @@
     } 
     
     .navigation { 
-        width: 300px; 
+        width: 250px; 
     } 
 } 
 
 
+@media screen and (max-width: 600px) { 
+    .active { 
+        display: none; 
+    } 
+    
+    .navigation { 
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        width: 50% !important; 
+    } 
+} 
 
 
 

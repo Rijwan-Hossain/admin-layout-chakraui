@@ -30,14 +30,7 @@ function App() {
           <Flex style={{height: '100vh'}}> 
               <Navigation navList={navList} /> 
 
-              <Box 
-                bg="#edf2f9" 
-                // w={navList ? '85%' : '100%'} 
-                w="100%"
-                style={{ 
-                  overflowY: 'scroll', 
-                  transition: 'all 0.4s' 
-                }}> 
+              <Box bg="#edf2f9" w="100%" style={{overflowY: 'scroll',transition: 'all 0.4s'}}> 
               
                 {/* Header */} 
                 <Header handleNavState={handleNavState} /> 
