@@ -13,7 +13,7 @@ function OrderDetails({location}) {
                 <img src={product.img} alt={product.slug} width="500px" /> 
 
                 <Box 
-                    p={10} ml={{base: '0px', md:'0px', lg: '20px'}} 
+                    p={10} ml={{base: '0px', md:'0px', lg: '0px'}} 
                     mt={{base: '0px', md:'30px', lg: '0px'}} 
                     boxShadow="base" bg="white"> 
                     <Text fontSize="22px" mb={3}> 
